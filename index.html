@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy Policy for Speech</title>
-  <meta name="description" content="Privacy Policy for the Speech app.">
+  <title>Speech – Support &amp; Privacy</title>
+  <meta name="description" content="Support contact and privacy policy for the Speech app.">
   <style>
     :root {
       color-scheme: light dark;
@@ -15,7 +15,6 @@
       --border: #dedee3;
       --accent: #0a84ff;
     }
-
     @media (prefers-color-scheme: dark) {
       :root {
         --background: #101113;
@@ -26,11 +25,7 @@
         --accent: #64aaff;
       }
     }
-
-    * {
-      box-sizing: border-box;
-    }
-
+    * { box-sizing: border-box; }
     body {
       margin: 0;
       min-height: 100vh;
@@ -39,83 +34,114 @@
       font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
       line-height: 1.55;
     }
-
     main {
-      width: min(760px, calc(100% - 32px));
+      width: min(800px, calc(100% - 32px));
       margin: 0 auto;
-      padding: 56px 0;
+      padding: 40px 0;
     }
-
     article {
       background: var(--panel);
       border: 1px solid var(--border);
-      border-radius: 12px;
+      border-radius: 14px;
       padding: clamp(24px, 5vw, 44px);
     }
-
-    h1 {
-      margin: 0 0 8px;
-      font-size: clamp(2rem, 5vw, 3rem);
-      line-height: 1.08;
-      letter-spacing: 0;
+    h1 { margin: 0 0 8px; font-size: clamp(2rem, 5vw, 3rem); line-height: 1.08; }
+    h2 { margin: 40px 0 12px; font-size: 1.55rem; }
+    h3 { margin: 28px 0 8px; font-size: 1.15rem; }
+    p { margin: 0 0 16px; }
+    ul { margin: 0 0 16px; padding-left: 1.3rem; }
+    li { margin: 6px 0; }
+    nav { display: flex; flex-wrap: wrap; gap: 10px 18px; margin: 24px 0 32px; }
+    a { color: var(--accent); }
+    .updated { color: var(--muted); font-size: 0.95rem; }
+    .contact {
+      margin: 24px 0;
+      padding: 18px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
     }
-
-    h2 {
-      margin: 32px 0 8px;
-      font-size: 1.2rem;
-      letter-spacing: 0;
-    }
-
-    p {
-      margin: 0 0 16px;
-    }
-
-    ul {
-      margin: 0 0 16px;
-      padding-left: 1.3rem;
-    }
-
-    li {
-      margin: 6px 0;
-    }
-
-    .updated {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    a {
-      color: var(--accent);
-    }
+    .language + .language { border-top: 1px solid var(--border); margin-top: 44px; padding-top: 4px; }
   </style>
 </head>
 <body>
   <main>
     <article>
-      <h1>Privacy Policy for Speech</h1>
-      <p class="updated">Last updated: June 12, 2026</p>
+      <h1>Speech – Support &amp; Privacy</h1>
+      <p class="updated">Last updated: September 23, 2026</p>
+      <nav aria-label="Languages">
+        <a href="#english">English</a>
+        <a href="#deutsch">Deutsch</a>
+        <a href="#francais">Français</a>
+      </nav>
 
-      <h2>Overview</h2>
-      <p>Speech is designed to read local PDF documents aloud using on-device speech synthesis. The app does not require an account and does not provide a cloud service.</p>
+      <section class="language" id="english" lang="en">
+        <h2>English</h2>
+        <h3>Support</h3>
+        <p>Speech reads PDF documents and text captured from photos aloud on iPhone.</p>
+        <div class="contact">
+          <strong>Contact:</strong>
+          <a href="mailto:kannen-floss-8h@icloud.com?subject=Speech%20Support">kannen-floss-8h@icloud.com</a>
+        </div>
+        <p>When requesting support, please include your iPhone model, iOS version, Speech app version, and a short description of the problem. Do not send confidential documents or extracted text.</p>
+        <ul>
+          <li>If a PDF cannot be opened, verify that it is a valid, unprotected PDF and select it again from Files.</li>
+          <li>If photo text is not recognized, use a sharp, well-lit image with clearly visible text.</li>
+          <li>Available voices are provided and managed by iOS in Settings &gt; Accessibility &gt; Read &amp; Speak.</li>
+        </ul>
 
-      <h2>Data Collection</h2>
-      <p>Speech does not collect, store, sell, or share personal data.</p>
-      <p>PDF files selected by the user are processed locally on the device. Extracted text remains on the device and is used only to provide reading, navigation, highlighting, and speech playback functionality.</p>
+        <h3>Privacy Policy</h3>
+        <p>Speech does not require an account and does not collect, sell, or share personal data. It does not use analytics, advertising, tracking SDKs, or external speech services.</p>
+        <p>PDF files, photos, camera images, and recognized text are processed on the device. They are not uploaded by Speech. Camera and photo-library access are requested only when you choose the corresponding feature.</p>
+        <p>Speech stores your language, voice, and playback-speed preferences locally and synchronizes only those preferences through your private iCloud key-value store when iCloud is available. Documents, photos, and recognized text are not synchronized.</p>
+        <p>You can remove locally stored preferences by deleting the app. Synced preferences can be replaced or removed by changing the relevant settings in Speech. Apple may process iCloud and system speech data under Apple’s own privacy policy.</p>
+      </section>
 
-      <h2>Third Parties</h2>
-      <p>Speech does not use third-party analytics, advertising SDKs, tracking SDKs, or external speech services.</p>
+      <section class="language" id="deutsch" lang="de">
+        <h2>Deutsch</h2>
+        <h3>Support</h3>
+        <p>Speech liest PDF-Dokumente sowie aus Fotos erkannten Text auf dem iPhone vor.</p>
+        <div class="contact">
+          <strong>Kontakt:</strong>
+          <a href="mailto:kannen-floss-8h@icloud.com?subject=Speech%20Support">kannen-floss-8h@icloud.com</a>
+        </div>
+        <p>Nenne bei einer Supportanfrage bitte iPhone-Modell, iOS-Version, Speech-App-Version und eine kurze Problembeschreibung. Sende keine vertraulichen Dokumente oder erkannten Texte.</p>
+        <ul>
+          <li>Wenn eine PDF-Datei nicht geöffnet wird, prüfe, ob sie gültig und ungeschützt ist, und wähle sie erneut in „Dateien“ aus.</li>
+          <li>Wenn Fototext nicht erkannt wird, verwende ein scharfes, gut beleuchtetes Bild mit deutlich sichtbarem Text.</li>
+          <li>Verfügbare Stimmen werden von iOS unter Einstellungen &gt; Bedienungshilfen &gt; Lesen &amp; Sprechen bereitgestellt und verwaltet.</li>
+        </ul>
 
-      <h2>Speech and Accessibility Settings</h2>
-      <p>Speech uses the voices and speech-related settings already configured by the user in the operating system. No voice recordings are created by the app.</p>
+        <h3>Datenschutzerklärung</h3>
+        <p>Speech benötigt kein Konto und erhebt, verkauft oder teilt keine personenbezogenen Daten. Die App verwendet keine Analyse-, Werbe- oder Tracking-SDKs und keine externen Sprachdienste.</p>
+        <p>PDF-Dateien, Fotos, Kameraaufnahmen und erkannter Text werden auf dem Gerät verarbeitet. Speech lädt sie nicht hoch. Der Zugriff auf Kamera oder Fotomediathek wird nur angefragt, wenn du die jeweilige Funktion auswählst.</p>
+        <p>Speech speichert Sprach-, Stimmen- und Wiedergabegeschwindigkeits-Einstellungen lokal und synchronisiert ausschließlich diese Einstellungen über deinen privaten iCloud-Schlüssel-Wert-Speicher, sofern iCloud verfügbar ist. Dokumente, Fotos und erkannter Text werden nicht synchronisiert.</p>
+        <p>Lokale Einstellungen werden durch Löschen der App entfernt. Synchronisierte Einstellungen kannst du in Speech ändern oder entfernen. Apple verarbeitet iCloud- und Systemsprachdaten gegebenenfalls nach der eigenen Datenschutzerklärung.</p>
+      </section>
 
-      <h2>Background Audio</h2>
-      <p>Background audio is used only to allow speech playback to continue while the app is not in the foreground.</p>
+      <section class="language" id="francais" lang="fr">
+        <h2>Français</h2>
+        <h3>Assistance</h3>
+        <p>Speech lit à voix haute les documents PDF et le texte reconnu dans des photos sur iPhone.</p>
+        <div class="contact">
+          <strong>Contact :</strong>
+          <a href="mailto:kannen-floss-8h@icloud.com?subject=Speech%20Support">kannen-floss-8h@icloud.com</a>
+        </div>
+        <p>Pour toute demande d’assistance, indiquez le modèle d’iPhone, la version d’iOS, la version de Speech et une courte description du problème. N’envoyez pas de documents confidentiels ni de texte reconnu.</p>
+        <ul>
+          <li>Si un PDF ne s’ouvre pas, vérifiez qu’il est valide et non protégé, puis sélectionnez-le à nouveau dans Fichiers.</li>
+          <li>Si le texte d’une photo n’est pas reconnu, utilisez une image nette, bien éclairée et au texte clairement visible.</li>
+          <li>Les voix disponibles sont fournies et gérées par iOS dans Réglages &gt; Accessibilité &gt; Lire et énoncer.</li>
+        </ul>
 
-      <h2>User Control</h2>
-      <p>Users choose which PDF files to open. Removing a PDF from the device, or closing it in the app, stops Speech from using that document.</p>
+        <h3>Politique de confidentialité</h3>
+        <p>Speech ne nécessite aucun compte et ne collecte, ne vend ni ne partage aucune donnée personnelle. L’app n’utilise aucun outil d’analyse, de publicité ou de suivi, ni aucun service vocal externe.</p>
+        <p>Les PDF, photos, images prises avec l’appareil photo et textes reconnus sont traités sur l’appareil. Speech ne les téléverse pas. L’accès à l’appareil photo ou à la photothèque n’est demandé que lorsque vous choisissez la fonction correspondante.</p>
+        <p>Speech enregistre localement vos préférences de langue, de voix et de vitesse de lecture et synchronise uniquement ces préférences dans votre stockage clé-valeur iCloud privé lorsque iCloud est disponible. Les documents, photos et textes reconnus ne sont pas synchronisés.</p>
+        <p>Vous pouvez supprimer les préférences locales en supprimant l’app. Les préférences synchronisées peuvent être modifiées ou supprimées dans Speech. Apple peut traiter les données iCloud et de synthèse vocale du système conformément à sa propre politique de confidentialité.</p>
+      </section>
 
-      <h2>Contact</h2>
-      <p>For privacy questions, use the developer contact information provided on the App Store listing for Speech.</p>
+      <h2>Copyright</h2>
+      <p>Copyright © 2026 Sergius Dyck. All rights reserved.</p>
     </article>
   </main>
 </body>
